@@ -421,14 +421,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('Piracy Is Crime')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('𝗠𝗔𝗡𝗨𝗔𝗟 𝗙𝗜𝗟𝗧𝗘𝗥', callback_data='manuelfilter'),
+            InlineKeyboardButton('𝗔𝗨𝗧𝗢 𝗙𝗜𝗟𝗧𝗘𝗥', callback_data='autofilter')
         ], [
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗜𝗢𝗡', callback_data='coct'),
+            InlineKeyboardButton('𝗘𝗫𝗧𝗥𝗔 𝗠𝗢𝗗𝗦', callback_data='extra')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔮 Status', callback_data='stats')
+            InlineKeyboardButton('🏠 𝗛𝗢𝗠𝗘 🏠', callback_data='start'),
+            InlineKeyboardButton('🚀 𝗦𝗧𝗔𝗧𝗨𝗦 🚀', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -438,11 +438,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria'),
-            InlineKeyboardButton('♥️ Source', callback_data='source')
+            InlineKeyboardButton('♻️ 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ♻️', url='https://t.me/+0uC-iq68FaFjZGNl'),
+            InlineKeyboardButton('❤️ 𝗦𝗢𝗨𝗥𝗖𝗘 ❤️', callback_data='source')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('🏠 𝗛𝗢𝗠𝗘 🏠', callback_data='start'),
+            InlineKeyboardButton('🔐 𝗖𝗟𝗢𝗦𝗘 🔐', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
